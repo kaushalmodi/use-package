@@ -1,4 +1,4 @@
-# Time-stamp: <2018-01-27 21:33:56 kmodi>
+# Time-stamp: <2018-01-27 21:37:53 kmodi>
 
 # Makefile to generate use-package doc site
 
@@ -131,7 +131,7 @@ hugo: vcheck
 doc_site:
 	@$(MAKE) hugo HUGO_BASE_DIR=.
 	@ls
-	@echo "pwd: $(pwd)"
+	@echo "pwd: $(shell pwd)"
 
 serve server: vcheck
 	@echo "Serving the site on $(HUGO_BASE_URL):$(PORT) .."
